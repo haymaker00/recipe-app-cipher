@@ -1,0 +1,39 @@
+.MuiTypography-h2{                  /*Figured out the color needed through third party site by posting the given page screenshot */
+    color: #886c6c;
+}
+
+.heading{
+    text-align: center;
+}
+
+.flex-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+.btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.btn{
+    padding:14px;
+    background-color: whitesmoke;
+    border: white;
+    font-weight: bold;
+    font-size: medium;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   /*Added box shadows for visual appeal*/
+    border-radius: 5px;                              /*Added border radius to button to make it curvy and visually appealing*/
+}
+
+.btn:hover{
+    cursor: pointer;
+}

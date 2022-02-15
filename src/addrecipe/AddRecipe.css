@@ -1,0 +1,112 @@
+.heading {
+    color: #886c6c;
+    text-decoration: none;
+}
+
+
+
+.like-icon{
+    padding: 5px 10px 0 0;
+}
+
+.recipe-heading{
+    font-size: 36px;
+    margin-left: 35%;           /*Did this to match the way heading was looking in the screenshot. in the screenshot, the heading was not perfectly in the middle, but rather shifted towards the left side*/
+    color: #886c6c;
+}
+
+.card-header-container{
+   display: flex;
+   justify-content: space-between;
+    background-color: #f8eed4;
+
+}
+
+.cardContainer{
+    margin: 0 20px 20px 20px;
+}
+
+.left{
+    width: 40%;
+    text-align: center;
+}
+
+.pic{
+    width: 400px;                           /*Added borders and 400px height width to match the apearance of the Screenshot*/
+    height: 400px;
+    border: solid 4px black;
+    margin-top: 30px;
+}
+
+.cardContent{
+    
+    background-color: #d9d8ec;          /*Flexed the left and right classes in row to keep them alignred side by side*/
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.description{
+    margin-bottom: 20px;
+}
+
+.ingredients-container {         /*Height was kept 250px and added a overflow scroll property*/
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 250px;
+    overflow-y: scroll;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.ingredients-container{
+    background-color: #d7d0d0;
+
+}
+
+.recipe-container{            /*max height was kept 250px and used overflow auto porperty so that scroller only appears when it is really needed, increasing the clarity of the page*/
+    width: 97%;
+    background-color:#d7d0d0 ;
+    margin-bottom: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 1056px){   /*Made the pager responsive to screen width change and compatible with mobile devices*/
+    .cardContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 95%;
+    }
+    .right{
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .cardContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 95%;
+    }
+    .right{
+        width: 95%;
+    }
+
+    .pic{
+        height: 200px;
+        width: 200px
+    }
+    .recipe-heading{
+        margin-left: 0;
+    }
+}
