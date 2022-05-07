@@ -4,7 +4,6 @@ import "./AddRecipe.css";
 import recipe from "../common/recipe.jpg"
 import LikeButton from "../likebtn/LikeButton"         //Like button will be imported from another file to make code clean and to make sure the file is not overcrowded with setState methods
 import ContentEditable from 'react-contenteditable';
-import DeleteIcon from '@material-ui/icons/Delete';
 
 
 class AddRecipe extends Component{
@@ -56,7 +55,6 @@ class AddRecipe extends Component{
                                     <div className = "recipe-heading"  style = {{fontWeight: 'bold'}}><ContentEditable html={this.state.heading} disabled = {false} onChange={this.headingChange}/></div>
                                     <div className = "like-icon">    
                                         <LikeButton  id = {"like"+this.props.id} num = {this.props.id}/>    {/*Like button comonent is called here for a card */}
-                                        <DeleteIcon id = {"delete"+this.props.id} onClick = {this.deleteHandler}/>
                                     </div>                               
                                 </div>
 
